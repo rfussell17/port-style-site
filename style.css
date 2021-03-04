@@ -15,7 +15,8 @@
 
   --clr-light: #fff;
   --clr-dark: #303030;
-  --clr-accent: #16e0bd;
+  --clr-accent: #b3b3b3;
+  --clr-blue: #02234c;
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -42,8 +43,8 @@ html {
 }
 
 body {
-  background: var(--clr-light);
-  color: var(--clr-dark);
+  background: var(--clr-blue);
+  color: var(--clr-light);
   margin: 0;
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
@@ -298,7 +299,7 @@ header {
 /*  My services section  */
 
 .my-services {
-  background-color: var(--clr-dark);
+  background-color: black;
   background-image: url(../img/services-bg.jpg);
   background-size: cover;
   color: var(--clr-light);
