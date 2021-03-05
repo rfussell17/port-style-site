@@ -17,6 +17,7 @@
   --clr-dark: #303030;
   --clr-accent: #b3b3b3;
   --clr-blue: #02234c;
+  --clr-green: #024c2b;
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -44,7 +45,7 @@ html {
 
 body {
   background: var(--clr-blue);
-  color: var(--clr-light);
+  color: var(--clr-green);
   margin: 0;
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
@@ -100,6 +101,7 @@ h3 {
 
 h1 {
   font-size: var(--fs-h1);
+  color: var(--clr-accent)
 }
 h2 {
   font-size: var(--fs-h2);
