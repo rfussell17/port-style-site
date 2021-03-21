@@ -15,9 +15,9 @@
 
   --clr-light: #fff;
   --clr-dark: #303030;
-  --clr-accent: #b3b3b3;
-  --clr-blue: #02234c;
-  --clr-green: #024c2b;
+  --clr-accent: rgb(201, 8, 42);
+  --clr-blue: rgb(1, 24, 64);
+  --clr-gold: rgb(187, 153, 87);
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -45,7 +45,7 @@ html {
 
 body {
   background: var(--clr-blue);
-  color: var(--clr-green);
+  color: var(--clr-light);
   margin: 0;
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
@@ -66,7 +66,7 @@ strong {
 }
 
 :focus {
-  outline: 3px solid var(--clr-accent);
+  outline: 3px solid var(--clr-gold);
   outline-offset: 3px;
 }
 
@@ -75,8 +75,8 @@ strong {
 .btn {
   display: inline-block;
   padding: 0.5em 2.5em;
-  background: var(--clr-accent);
-  color: var(--clr-dark);
+  background: var(--clr-blue);
+  color: var(--clr-light);
   text-decoration: none;
   cursor: pointer;
   font-size: 0.8rem;
@@ -101,7 +101,7 @@ h3 {
 
 h1 {
   font-size: var(--fs-h1);
-  color: var(--clr-accent)
+  color: var(--clr-light)
 }
 h2 {
   font-size: var(--fs-h2);
@@ -129,7 +129,8 @@ h3 {
 
 .section__subtitle--intro,
 .section__subtitle--about {
-  background: var(--clr-accent);
+  background: var(--clr-gold);
+  color: var(--clr-blue);
   padding: 0.25em 1em;
   font-family: var(--ff-secondary);
   margin-bottom: 1em;
@@ -186,7 +187,7 @@ header {
 }
 
 .nav__link:hover {
-  color: var(--clr-accent);
+  color: var(--clr-gold);
 }
 
 .nav-toggle {
@@ -230,7 +231,7 @@ header {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-  background: var(--clr-accent);
+  background: var(--clr-gold);
   width: 2em;
   height: 3px;
   border-radius: 1em;
@@ -309,7 +310,7 @@ header {
 }
 
 .section__title--services {
-  color: var(--clr-accent);
+  color: var(--clr-light);
   position: relative;
 }
 
@@ -392,13 +393,17 @@ header {
   text-align: center;
 }
 
+.my-work p {
+  color: var(--clr-gold);
+}
+
 .portfolio {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .portfolio__item {
-  background: var(--clr-accent);
+  background: var(--clr-gold);
   overflow: hidden;
 }
 
@@ -419,14 +424,14 @@ header {
 
 .footer {
   background: #111;
-  color: var(--clr-accent);
+  color: var(--clr-gold);
   text-align: center;
   padding: 2.5em 0;
   font-size: var(--fs-h3);
 }
 
 .footer a {
-  color: inherit;
+  color: var(--clr-gold);
   text-decoration: none;
 }
 
